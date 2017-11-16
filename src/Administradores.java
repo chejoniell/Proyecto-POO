@@ -1,6 +1,11 @@
+import org.bson.types.ObjectId;
+import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Id;
 
+@Entity("Admins")
 public class Administradores {
 	private String user;
+	@Id private ObjectId id;
 	private String password;
 	private boolean admin;
 	
